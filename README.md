@@ -28,13 +28,17 @@ The dataset contains the following columns id, release_date, movie, production_b
             * **Format** - The values are comma separated thus a CSV file.     
 
 ### The visualizations
+These are presentations also present in the powerpoint [presentation](https://www.imdb.com/) 
 #### Query 1  
 * ![Genre_vs_Average_Rating](https://github.com/Muramati/File-hosting/blob/main/Movie%20Vs%20Average%20Rating.png?raw=true)
+
 * ![Director_Name_vs_Average_rating](https://github.com/Muramati/File-hosting/blob/main/Director_name%20vs%20Total%20Average%20rating.png?raw=true)
+
 * ![Writers_name_vs_average_Rating](https://github.com/Muramati/File-hosting/blob/main/Writers_name%20vs%20Average_rating.png?raw=true)
 
 #### Query 2
 * ![Production_budget_vs_Total_Revenue_and_Profits](https://github.com/Muramati/File-hosting/blob/main/Production%20budget%20vs%20Totol%20Revenue%20and%20Profits.png?raw=true)
+
 * ![production_budgets_vs_number_of_movies](https://github.com/Muramati/File-hosting/blob/main/production_budgets%20vs%20number%20of%20movies.png?raw=true)
 
 #### Query 3
