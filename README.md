@@ -1,6 +1,6 @@
 # Phase 1 Project - Microsoft Movie Studio (EDA)
-![studio_picture](https://macksennettstudios.net/wp-content/uploads/2021/02/What-does-a-film-studio-do.jpg)
-A film studio just like the one Microsoft is trying to start and run succesfully.
+ ![studio_picture](https://macksennettstudios.net/wp-content/uploads/2021/02/What-does-a-film-studio-do.jpg)
+ A film studio just like the one Microsoft is trying to start and run succesfully.
 ## Project Overview
 The objective of this project is to analyze the film industry and provide actionable insights to the head of Microsoft's new movie studio on the types of films that are currently performing the best at the box office, as well as the current producers and writers who have experience in producing successful movies. Additionally, we will investigate the relationship between the budget, profits, and revenue of the film industry, and provide recommendations on the optimal budget and runtime for film productions.
 To achieve this objective, we will analyze provided datasets on movie box office performance, including genres and revenue. We will also analyze data on successful producers and writers, including their track record and the number of successful movies they have produced or written.
@@ -19,50 +19,52 @@ They are movie datasets from:
    * [The Numbers](https://www.the-numbers.com/)
 
 ### Description of data
- The data sources for this analysis will be pulled from the following data files
-`im.db.zip`
-**Contents:**
+ The data sources for this analysis will be pulled from the following data files.
+ `im.db.zip`
+  **Contents:**
    ![movie data erd](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-v2-4/master/movie_data_erd.jpeg)
-**Format** - It is formatted in a database with the above tables.
+ **Format** - It is formatted in a database with the above tables.
         
-`tn.movie_budgets.csv.gz`
-**Contents:**
-The dataset contains the following columns id, release_date, movie, production_budget, domestic_gross and the worldwide_gross.
-            * **Format** - The values are comma separated thus a CSV file.     
+ `tn.movie_budgets.csv.gz`
+ **Contents:**
+ The dataset contains the following columns id, release_date, movie, production_budget, domestic_gross and the worldwide_gross.
+   * **Format** - The values are comma separated thus a CSV file.
+### Data Analysis
+  The data analysis done on this project can be found in this [notebook.](https://github.com/Muramati/dsc-phase-1-project-v2-4/blob/master/student.ipynb?view=true) Under the data analysis sections of each query.
 
-### **The visualizations**
-These are presentations also present in the powerpoint [presentation](https://github.com/Muramati/dsc-phase-1-project-v2-4/blob/master/Phase_1_project_slides.pdf?raw=true) 
+### **The Visualizations**
+ These are presentations from the data also present in the powerpoint [presentation.](https://github.com/Muramati/dsc-phase-1-project-v2-4/blob/master/Phase_1_project_slides.pdf?view=true) 
 
-#### Query 1  - Types of films, names of directors and writers that and who are currently successful
-* This Barplot below shows the best performing genres and genre combinations that give the highest number of ratings which means they are more successful.
-![Genre_vs_Average_Rating](https://github.com/Muramati/File-hosting/blob/main/Movie%20Vs%20Average%20Rating.png?raw=true)
+#### Query 1  - Types of films, names of directors and writers that and who are currently successful.
+ * This Barplot below shows the best performing genres and genre combinations that give the highest number of ratings.
+    ![Genre_vs_Average_Rating](https://github.com/Muramati/File-hosting/blob/main/Movie%20Vs%20Average%20Rating.png?raw=true)
 
-* The Barplot below shows the best 10 performing directors according to experience of more than 20 movies directed by comparing the average rating of their movies.
- ![Director_Name_vs_Average_rating](https://github.com/Muramati/File-hosting/blob/main/Director_name%20vs%20Total%20Average%20rating.png?raw=true)
+ * The Barplot below shows the best 10 performing directors who have experience in writing more than 20 movies compared using the average rating of all the movies they've directed. 
+    ![Director_Name_vs_Average_rating](https://github.com/Muramati/File-hosting/blob/main/Director_name%20vs%20Total%20Average%20rating.png?raw=true)
 
-* Barplot below shows the best 10 performing writers according to experience of more than 20 movies made from their writing compared to their average rating of their movies.
-*![Writers_name_vs_average_Rating](https://github.com/Muramati/File-hosting/blob/main/Writers_name%20vs%20Average_rating.png?raw=true)
+ * The barplot below shows the best 10 performing writers who have experience in writing more than 20 movies compared using the average rating of all the movies they've written. 
+    ![Writers_name_vs_average_Rating](https://github.com/Muramati/File-hosting/blob/main/Writers_name%20vs%20Average_rating.png?raw=true)
 
-#### Query 2 - The Budget and its relationship with the total revenue and profits
-* The scatter plot shows that the higher the production budget the higher the profits and the total gross revenue.
-![Production_budget_vs_Total_Revenue_and_Profits](https://github.com/Muramati/File-hosting/blob/main/Production%20budget%20vs%20Totol%20Revenue%20and%20Profits.png?raw=true)
+#### Query 2 - The Budget and its relationship with the total revenue and profits.
+ * The scatter plot shows that the higher the production budget the higher the profits and the total gross revenue.
+    ![Production_budget_vs_Total_Revenue_and_Profits](https://github.com/Muramati/File-hosting/blob/main/Production%20budget%20vs%20Totol%20Revenue%20and%20Profits.png?raw=true)
 
-* The histogram shows that the most movies have low budgets with the mean being around $34M.
-![production_budgets_vs_number_of_movies](https://github.com/Muramati/File-hosting/blob/main/production_budgets%20vs%20number%20of%20movies.png?raw=true)
+ * The histogram shows that the most movies have low budgets with the mean being around $34M.
+    ![production_budgets_vs_number_of_movies](https://github.com/Muramati/File-hosting/blob/main/production_budgets%20vs%20number%20of%20movies.png?raw=true)
 
-#### Query 3 - The runtime most movies have
-* The visualization below shows us where most movies' run time is and it is near the mean which is 94 minutes.
-![runtime_minutes_vs_number_of_movies](https://github.com/Muramati/File-hosting/blob/main/runtime_minutes%20vs%20number%20of%20movies.png?raw=true)
+#### Query 3 - The runtime most movies have.
+ * The visualization below shows us where most movies' run time is and it is near the mean which is 94 minutes.
+    ![runtime_minutes_vs_number_of_movies](https://github.com/Muramati/File-hosting/blob/main/runtime_minutes%20vs%20number%20of%20movies.png?raw=true)
 
 ## Conclusion
-### Query 1 - Types of films, names of directors and writers that and who are currently successful
-* From Query 1's first plot the company should consider genres and genre combinations on the X axis as a good place to start as they have a good average rating and are more likely to succeed.
-* From Query 1's second plot the company should hire the directors on the X axis as they have more experience in creating high rating films.
-* From Query 1's third plot the company should hire the writers on the X axis as they have more of their works made to high rating films.
+ ### Query 1 - Types of films, names of directors and writers that and who are currently successful.
+   * From Query 1's first plot the company should consider genres and genre combinations on the X axis as a good place to start as they have a good average rating and are more likely to succeed.
+   * From Query 1's second plot the company should hire the directors on the X axis as they have more experience in creating high rating films.
+   * From Query 1's third plot the company should hire the writers on the X axis as they have more of their works made to high rating films.
 
-### Query 2 - The Budget and its relationship with the total revenue and profits
-* From Query 2's first plot the scatter plot 2.4.1 shows that the more the production money the more the total gross revenues and gross profits the company will get.
-* From Query 2's Second plot the histogram shows the mean production budget which indicates that most shows have a budget of $34M. The scatterplot tough in the latter point strongly stipulates that films with budgets going into hundreds of millions tend to be more successful in terms of profits.
+ ### Query 2 - The Budget and its relationship with the total revenue and profits.
+   * From Query 2's first plot the scatter plot 2.4.1 shows that the more the production money the more the total gross revenues and gross profits the company will get.
+   * From Query 2's Second plot the histogram shows the mean production budget which indicates that most shows have a budget of $34M. The scatterplot tough in the latter point strongly stipulates that films with budgets going into hundreds of millions tend to be more successful in terms of profits.
 
-### Query 3 - The runtime most movies have
-* From Query 3's plot the findings are that most shows ran approximately by measures of central tendency to a maximum of 90 minutes and the recomendation to the company would be to see to it that their runtimes are within that number where mos companies keep them so that they can allign themselves with already successful companies.
+ ### Query 3 - The runtime most movies have.
+   * From Query 3's plot the findings are that most shows ran approximately by measures of central tendency to a maximum of 90 minutes and the recomendation to the company would be to see to it that their runtimes are within that number where mos companies keep them so that they can allign themselves with already successful companies.
