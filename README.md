@@ -31,7 +31,7 @@ The dataset contains the following columns id, release_date, movie, production_b
             * **Format** - The values are comma separated thus a CSV file.     
 
 ### **The visualizations**
-These are presentations also present in the powerpoint [presentation](https://github.com/Muramati/dsc-phase-1-project-v2-4/commit/833266c8a62b488b102a88907a3100ac6645e41f?raw=true) 
+These are presentations also present in the powerpoint [presentation](https://github.com/Muramati/dsc-phase-1-project-v2-4/blob/master/Phase_1_project_slides.pdf?raw=true) 
 
 #### Query 1  - Types of films, names of directors and writers that and who are currently successful
 * This Barplot below shows the best performing genres and genre combinations that give the highest number of ratings which means they are more successful.
